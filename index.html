@@ -1,0 +1,146 @@
+<!doctype html>
+<html class="no-js" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml" lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<title>Untitled</title>
+
+	<style type="text/css">
+
+		.nice-alert-container{
+			background-color:#eee;
+			height:200px;
+			margin:-100px 0 0 -125px;
+			position:absolute;
+			top:50%;
+			left:50%;
+			padding:50px 10px 10px 10px;
+			width:250px;
+			z-index:5100;
+			/**/
+			border-radius: 5px;
+		}
+
+		.nice-alert-title-container{
+			border-bottom:1px solid #bdbdbd;
+			height:40px;
+			left:0;
+			position:absolute;
+			top:0;
+			width:100%;
+			z-index:5100;
+			/**/
+			border-radius: 5px 5px 0 0;
+			background: #ffffff; /* Old browsers */
+			background: -moz-linear-gradient(top,  #ffffff 0%, #fbfbfb 18%, #e1e1e1 85%, #dddddd 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(18%,#fbfbfb), color-stop(85%,#e1e1e1), color-stop(100%,#dddddd)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top,  #ffffff 0%,#fbfbfb 18%,#e1e1e1 85%,#dddddd 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top,  #ffffff 0%,#fbfbfb 18%,#e1e1e1 85%,#dddddd 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top,  #ffffff 0%,#fbfbfb 18%,#e1e1e1 85%,#dddddd 100%); /* IE10+ */
+			background: linear-gradient(top,  #ffffff 0%,#fbfbfb 18%,#e1e1e1 85%,#dddddd 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dddddd',GradientType=0 ); /* IE6-9 */
+		}
+
+		.nice-alert-title-container strong{
+			color:#666;
+			font-family:Arial, Helvetica, sans-serif;
+			font-size:16px;
+			line-height:42px;
+			padding-left:10px;
+		}
+
+		.nice-alert-title-container .close{
+			background: transparent url(./images/button-close-small.png) no-repeat left top;
+			height:16px;
+			position:absolute;
+			right:8px;
+			text-decoration:none;
+			top:13px;
+			width:16px;
+		}
+
+		.nice-alert-container hr{
+			border:none;
+			background-color:#fff;
+			height:1px;
+			left:0;
+			margin:0;
+			padding:0;
+			position:absolute;
+			top:41px;
+			width:100%;
+			z-index:5100;
+		}
+
+		.nice-alert-message-container{
+
+		}
+
+		.nice-alert-message-container p{
+			font-family:Arial, Helvetica, sans-serif;
+			font-size:14px;
+			line-height:21px;
+		}
+
+		.nice-alert-message-container p:first-child{
+			margin:0;
+			padding:0;
+		}
+
+		.nice-alert-shadow{
+			background-color:#bdbdbd;
+			height:200px;
+			margin:-95px 0 0 -125px;
+			position:absolute;
+			top:50%;
+			left:50%;
+			padding:50px 10px 10px 10px;
+			width:250px;
+			z-index:5050;
+			/**/
+			border-radius: 5px;
+			-webkit-box-shadow:  0px 3px 3px 3px rgba(0, 0, 0, .2);
+      box-shadow:  0px 3px 3px 3px rgba(0, 0, 0, .2);
+		}
+
+		.nice-alert-overlay{
+			background-color: rgba(0,0,0,.3);
+			height:100%;
+			position:fixed;
+			width:100%;
+			z-index:5000;
+		}
+
+	</style>
+</head>
+
+<body>
+
+	<div id="container">
+	</div> <!-- eo #container -->
+
+	<div class='nice-alert-container'>
+		<div class='nice-alert-title-container'>
+			<strong>Title goes here</strong>
+			<a href="javascript:;" class='close'>&nbsp;</a>
+		</div>
+		<hr />
+		<div class='nice-alert-message-container'>
+			<p>
+				Our alert text goes here.  We can have it be as long as we want.
+			</p>
+		</div>
+	</div><!-- nice-alert-container -->
+
+	<div class='nice-alert-shadow'>&nbsp;</div>
+
+	<div class='nice-alert-overlay'>&nbsp;</div>
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
+
+	<script type="text/javascript">
+		$(function() {
+		 log('DOM is Ready ...');
+		});
+  	</script>
+</body>
+</html>
